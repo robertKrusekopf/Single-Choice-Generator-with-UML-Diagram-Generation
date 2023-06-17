@@ -1,0 +1,10 @@
+title = "config file for Single-Choice Generator with PlantUML integration"
+Output = 0
+Mode = 0
+QuestionPoolID = "50275"
+QuestionPoolTitle = "Question Pool Title"
+TaxonomyTitle = "Taxonomy Title"
+NumberofVersions = "10"
+ILIASFolderMarking = "1686664832"
+FirstQuestionID = "1"
+UseallUML = 1

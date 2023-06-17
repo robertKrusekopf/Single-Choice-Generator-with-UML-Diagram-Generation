@@ -1,0 +1,51 @@
+@NAME
+Example
+@AUTHOR
+Robert Krusekopf
+@DATE
+2023
+@VERSION
+1.0
+@DESCRIPTION
+Example Questions and Diagrams
+@PARAMETER
+$Name
+@VALUERANGE
+Kunde # Customer # User
+@TASK
+Gegeben ist ein Sequenzdiagramm. Welche der folgenden Aussagen sind richtig?
+@TRUE
+True $Name.
+True 1
+True 2
+True 3
+@FALSE
+False $Name.
+False 1
+False 2
+False 3
+False 4
+@STARTUML1
+Bestellung *--> Zahlungsmethode
+Zahlungsmethode <|-- Nachnahme
+Zahlungsmethode <|-- Vorauskasse
+Zahlungsmethode <|-- Bankeinzug
+Bestellung : Lieferanschrift
+Zahlungsmethode : abbuchen()
+class Bankeinzug {
+Kontonummer: String
+Bankleihzahl: String
+Bank: String
+}
+@STARTUML2
+actor $Name
+$Name -> Geldautomat: Karte einschieben()
+activate Geldautomat
+database Server
+Geldautomat -> Server: KartePruefen(Kartendaten)
+activate Server
+||45||
+Server --> Geldautomat
+deactivate Server
+deactivate Geldautomat
+@EXCLUSIONS
