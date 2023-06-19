@@ -104,7 +104,6 @@ vector<Picture> addUMLtoPictures(vector<Diagram> diagrams, vector<Picture> pictu
 }
 
 // read dimensions of png files and set correct height and width of pictures in questions
-//TODO: Alle Bilder haben selbe Größe
 void setPNGdimensions(string filename, vector<Question> &questions)
 {
     int QuestionID = 0;
